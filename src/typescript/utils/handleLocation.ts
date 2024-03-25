@@ -1,4 +1,4 @@
-import { getTitleFromHTML } from "../utils";
+import { getTitleFromHTML } from ".";
 import { routes } from "../constants";
 
 export const handleLocation = async (): Promise<void> => {
