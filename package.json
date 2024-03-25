@@ -10,10 +10,10 @@
   "type": "module",
   "scripts": {
     "prebuild": "node scripts/generateRoutes.cjs",
-    "dev": "bun prebuild && vite --host --open",
-    "build": "bun prebuild && vite build",
+    "dev": "npm run prebuild && vite --host --open",
+    "build": "npm run prebuild && vite build",
     "preview": "vite preview --host --open",
-    "build:preview": "bun prebuild && vite build && vite preview --host --open",
+    "build:preview": "npm run prebuild && vite build && vite preview --host --open",
     "format": "prettier --write .",
     "lint": "eslint --fix .",
     "lint:format": "prettier --write . && eslint --fix ."
