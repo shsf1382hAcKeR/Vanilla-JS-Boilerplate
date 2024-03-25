@@ -9,10 +9,11 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --open",
-    "build": "vite build",
+    "prebuild": "node generateRoutes.cjs",
+    "dev": "bun prebuild && vite --host --open",
+    "build": "bun prebuild && vite build",
     "preview": "vite preview --host --open",
-    "build:preview": "vite build && vite preview --host --open",
+    "build:preview": "bun prebuild && vite build && vite preview --host --open",
     "format": "prettier --write .",
     "lint": "eslint --fix .",
     "lint:format": "prettier --write . && eslint --fix ."
