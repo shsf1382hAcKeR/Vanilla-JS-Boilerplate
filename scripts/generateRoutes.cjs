@@ -56,7 +56,7 @@ fs.readdir(pagesDir, (err, files) => {
     2,
   )};\n`;
   fs.writeFileSync(
-    path.join(__dirname, "../src/scripts/constants/routes.ts"),
+    path.join(__dirname, "../src/typescript/constants/routes.ts"),
     routesFileContent,
   );
 
