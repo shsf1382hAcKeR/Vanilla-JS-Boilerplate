@@ -9,7 +9,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "prebuild": "node generateRoutes.cjs",
+    "prebuild": "node scripts/generateRoutes.cjs",
     "dev": "bun prebuild && vite --host --open",
     "build": "bun prebuild && vite build",
     "preview": "vite preview --host --open",
