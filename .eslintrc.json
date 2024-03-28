@@ -12,6 +12,9 @@
   "rules": {
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "no-console": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-else-return": "off"
   }
 }
